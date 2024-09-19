@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Name: Saumya Shah
+    Email: sshah273@asu.edu -->
+
+    <style>
+        svg{
+            width: 1000px;
+            height: 600px;
+            /* border: 1px solid black; */
+        }
+
+        .Heading{
+            text-align: center;
+
+            margin-bottom: 2em;
+        }
+
+        .col-3{
+            width: 100%;
+            /* flex-wrap: wrap;
+            text-align: center; */
+            margin-bottom: 10px;
+        }
+
+        #column-1-select{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Homework #1: D3 Simple</h1>
+        <h3 class="text-center">Saumya Shah - sshah273@asu,edu</h3>
+        
+        <div class="row">
+    <div class="Heading">
+        <h1>Female vs Male employment rate in various countries</h1>
+    </div>
+    <div class="col-3">
+        Country: &nbsp;
+        <select id="column-1-select" onchange="drawLollipopChart();">
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="China">China</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Russia">Russia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brazil">Brazil</option>
+        </select>
+    </div>
+    
+    <div id="myDataVis">
+        <svg></svg>
+    </div>
+
+</body>
+
+<script src="js/main.js"></script>
+</html>
